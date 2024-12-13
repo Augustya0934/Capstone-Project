@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature-Inspired Design</title>
+    <link href="https://fonts.cdnfonts.com/css/playball" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lexend Exa' rel='stylesheet">
+    <style>
+        
+        body, h1, h2, h3, p, ul, li {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Lexend Exa';font-size: 22px;
+            
+        }
+
+        
+        body {
+            font-family: 'Lexend Deca', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .navbar {
+            border-bottom: 2px solid #333;
+            padding: 10px 20px;
+        }
+
+        .navbar-items {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .toplinks {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .toplinks li {
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        .logo {
+            font-family: 'Playball', cursive;
+            font-size: 28px;
+        }
+
+        
+        .eyecatcher {
+            text-align: center;
+            margin: 40px 20px;
+        }
+
+        .eyecatcher img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .theline {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        
+        .content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .myprojects {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+        }
+
+        .theimages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .project-details {
+            padding: 15px;
+        }
+
+        .project-title {
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+
+        .project-button {
+            display: inline-block;
+            padding: 10px 15px;
+            background: #AD7C00;
+            color: whitesmoke;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+
+        
+        .stayconnected {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px 20px;
+            background: #f9f9f9;
+            border-top: 1px solid #ddd;
+        }
+
+        .contactme, .subscribe {
+            flex: 1 1 300px;
+            text-align: center;
+        }
+
+        .contactme h3, .subscribe h3 {
+            margin-bottom: 10px;
+        }
+
+        .subscribe input {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .subscribe button {
+            padding: 10px 20px;
+            background: #AD7C00;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            font-size: 1.5rem;
+            color: #333;
+            text-decoration: none;
+        }
+
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+
+        
+        @media (max-width: 768px) {
+            .navbar-items {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .toplinks {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .stayconnected {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-items">
+            <span class="logo">Nature</span>
+            <ul class="toplinks">
+                <li>Home</li>
+                <li>Portfolio</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="eyecatcher">
+            <div class="theline">Discover the Tranquility of Nature-Inspired Design</div>
+            <img src="beach.png" alt="A serene beach view">
+        </section>
+
+        <section class="content">
+            <h2 class="myprojects">My Nature-Inspired Projects</h2>
+            <div class="theimages">
+                <div class="project-card">
+                    <img src="theforest.png" alt="Forest Retreat">
+                    <div class="project-details">
+                        <div class="project-title">Forest Retreat</div>
+                        <div class="project-description">A serene forest retreat design</div>
+                        <a href="#" class="project-button">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="thebeachhouse.png" alt="Beach House">
+                    <div class="project-details">
+                        <div class="project-title">Beach House</div>
+                        <div class="project-description">A stunning beach house design</div>
+                        <a href="#" class="project-button">View Project</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="crazyforest.png" alt="Botanical Garden">
+                    <div class="project-details">
+                        <div class="project-title">Botanical Garden</div>
+                        <div class="project-description">A botanical garden-inspired space</div>
+                        <a href="#" class="project-button">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stayconnected">
+            <div class="contactme">
+                <h3>Contact Me</h3>
+                <p>Get in touch to discuss your next nature-inspired project.</p>
+            </div>
+            <div class="subscribe">
+                <h3>Stay Connected</h3>
+                <p>Join the journey of nature-inspired design.</p>
+                <input type="email" placeholder="Your Email">
+                <button>Subscribe</button>
+            </div>
+            <div class="social-icons">
+                <a href="#">&#x1F30E;</a>
+                <a href="#">&#x1F304;</a>
+                <a href="#">&#x1F304;</a>
+                
+            </div>
+        </section>
+
+        <footer class="footer">
+            2023 Nature-Inspired Designs
+        </footer>
+    </main>
+</body>
+</html>
